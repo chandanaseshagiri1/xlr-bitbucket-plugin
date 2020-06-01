@@ -1,4 +1,4 @@
-name: Build Tosca V2 Plugin
+name: Build XLR Bitbucket Plugin
 
 on: [push]
 
