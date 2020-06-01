@@ -61,7 +61,7 @@ else:
     newCommit = {}
     for branch in info["values"]:
         if branch["displayId"] not in excludeBranches.strip(" ").strip(",").split(","):
-            if (branchName is None) or (branch["displayId"] == branchName):
+            if (branchName is None) or (branchName == "") or (branch["displayId"] == branchName)
                 logger.debug("branchName = %s" % branchName)
                 branchid = branch["displayId"]
                 lastcommit = branch["latestCommit"]
