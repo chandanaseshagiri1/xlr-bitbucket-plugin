@@ -14,7 +14,7 @@ jobs:
       with:
         java-version: 1.8
     - name: Build with Gradle
-      run: chmod u+x gradlew ;./gradlew shadowJar --stacktrace
+      run: chmod u+x gradlew ;./gradlew runDockerCompose --stacktrace
     - name: Release
       uses: softprops/action-gh-release@v1
       if: startsWith(github.ref, 'refs/tags/')
